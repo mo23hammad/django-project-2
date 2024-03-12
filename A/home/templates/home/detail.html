@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>{{ product.name }}</p>
+    <p>price: {{ product.price }}$</p>
+    <small>{{ product.created }}</small><br>
+    <img src="{{ product.image.url }}">
+    <form action="{% url 'orders:add_cart' product.id %}" method='post'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Order">
+    </form>
+    <p>{{ product.description }}</p>
+
+{% endblock content %}

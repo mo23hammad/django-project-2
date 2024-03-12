@@ -1,0 +1,9 @@
+{
+    "CodeGPT.apiKey": "CodeGPT Plus Beta",
+    "diffEditor.codeLens": false,
+    "workbench.editor.autoLockGroups": {
+        "default": true
+    },
+    "workbench.activityBar.location": "side",
+    "workbench.editor.showTabs": "multiple"
+}
